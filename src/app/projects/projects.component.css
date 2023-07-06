@@ -1,0 +1,93 @@
+.card{
+        width: 310px;
+        border: 1px solid #eee;
+        margin: auto;
+
+}
+.project_pic{
+        height: 220px;
+        /* background-color: #eee; */
+        /* background-image: url("/assets/projects/1.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+.body{
+        padding: 15px;
+        background-color: #fff;
+}
+p{
+        font-family: "Work Sans",sans-serif;
+        font-size: 15px;
+        /* text-align: justify; */
+}
+.projects{
+        display: flex;
+        justify-content: space-around;
+}
+img{
+        width: 100%;
+        height: 100%;
+}
+
+.arrow-button {
+        display: flex;
+        border: none;
+        color: #fff;
+        background-color: #3a9bac;
+        padding-left: 15px;
+        border-radius: 2px;
+        transition: all .3s ease;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        margin: auto;
+}
+.arrow-button > .arrow {
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+        margin-left:5px ;
+        transition: all .3s ease;
+}
+.arrow-button > .arrow::before {
+        display: block;
+        background-color: currentColor;
+        width: 3px;
+        transform-origin: bottom right;
+        height: 2px;
+        position: absolute;
+        opacity: 0;
+        bottom: calc(-2px / 2);
+        transform: rotate(45deg);
+        transition: all .3s ease;
+        content: "";
+        right: 0;
+}
+.arrow-button:hover > .arrow {
+        transform: rotate(-45deg) translate(10px, 10px);
+        border-color: text-hover-color;
+}
+.arrow-button:hover > .arrow::before {
+        opacity: 1;
+        width: 25px;
+}
+.arrow-button:hover {
+        background-color: #54c5da;
+        color: #fff;
+}
+
+@media screen and (max-width: 678px) {
+        .projects{
+                flex-direction: column;
+        }
+        .card{
+
+                margin-top: 2%;
+                
+        }
+        
+}

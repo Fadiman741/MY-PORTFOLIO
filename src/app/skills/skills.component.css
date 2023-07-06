@@ -1,0 +1,17 @@
+p{
+        color:#fff;
+        font-family: "Work Sans",sans-serif;
+        font-size: 15px;
+}
+h1{
+        color:#fff;
+        font-family: "Work Sans",sans-serif;   
+}
+li{
+        color:#fff;
+        font-family: "Work Sans",sans-serif;   
+}
+.skills{
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+}

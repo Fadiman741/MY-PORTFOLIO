@@ -1,0 +1,23 @@
+p{
+        font-family: "Work Sans",sans-serif;
+        font-size: 15px;
+        text-align: justify;
+}
+.column-count{
+        column-count: 2;
+        column-gap: 40px;
+        padding: 20px;
+        column-rule: 1px solid #0F4148;
+}
+
+h1{
+        font-size: 45px;
+        padding-left: 20px;
+}
+@media screen and (max-width: 678px) {
+        .column-count{
+                column-count: 1;
+                column-rule: 1px solid #fff;
+        }
+        
+}
