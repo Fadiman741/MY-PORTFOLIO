@@ -9,16 +9,18 @@ import { ContactmeComponent } from './contactme/contactme.component';
 import { BackgroundComponent } from './background/background.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [							
+  declarations: [								
     AppComponent,
       HomePageComponent,
       FooterComponent,
       ContactmeComponent,
       BackgroundComponent,
       SkillsComponent,
-      ProjectsComponent
+      ProjectsComponent,
+      NavbarComponent
    ],
   imports: [
     BrowserModule,
