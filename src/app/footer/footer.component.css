@@ -15,6 +15,9 @@ hr:after {
         padding: 0 0.15em;
         background: #212121;
 }
+.footer{
+        margin-bottom: 30px;
+}
 .footer-items{
         display: flex;
         justify-content: space-between;
@@ -22,4 +25,11 @@ hr:after {
 p{
         font-family: "Work Sans",sans-serif;
         font-size: 15px;    
+}
+
+
+@media screen and (max-width: 678px) {
+        .footer-items{
+                flex-direction: column;
+        }
 }
