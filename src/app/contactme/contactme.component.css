@@ -37,13 +37,15 @@ label{
 .textarea{
         display: flex;
         flex-direction: column;
-        margin-right: 2%;
+        margin-right: 4%;
         margin-top: 20px;
 }
-.textarea input{
+.textarea textarea{
         width: 100%;
         height: 200px;
         border: none;
+        border-radius: 3px;
+        padding: 15px;
 }
 .arrow-button {
         display: flex;
@@ -97,13 +99,18 @@ label{
         background-color: #54c5da;
         color: #fff;
 }
+::placeholder {
+        color: #bbb;
+        font-size: 14px;
+        font-family: "Work Sans",sans-serif;
 
+}
 @media screen and (max-width: 678px) {
         .contact{
 
                 padding: 3%;
         }
-        .textarea input{
-                width: 97%;
+        .textarea textarea{
+                width: 98%;
         }
 }
