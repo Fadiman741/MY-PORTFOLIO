@@ -4,25 +4,26 @@
   <div style="max-width: 700px;margin: auto;transform: skewY(3deg);">
     <h1>Let's Talk</h1>
     <p>Thanks for taking the time to contact me. Please send me some information on your project so I can determine how best to help you.</p>
-    <div>
-      <div style="display: flex;justify-content: space-between;">
-        <div class="input">
-          <label><b>Name</b>*</label>
-          <input type="text" placeholder="Enter your name...">
+    <form action="https://formsubmit.co/773800d2a5622055519882384955653f" method="POST">
+        <div>
+          <div style="display: flex;justify-content: space-between;">
+            <div class="input">
+              <label><b>Name</b>*</label>
+              <input type="text" placeholder="Enter your name..." name="name"  required>
+            </div>
+            <div class="input" style="padding-left: 3%;">
+              <label><b>Email</b>*</label>
+              <input type="text" placeholder="Enter your email..."name="email" required>
+            </div>
+          </div>
+          <div class="textarea">
+              <label><b>Your Message</b></label>
+              <!-- <input  placeholder="Enter your name..."> -->
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea> 
+          </div>
         </div>
-        <div class="input" style="padding-left: 3%;">
-          <label><b>Email</b>*</label>
-          <input type="text" placeholder="Enter your email...">
-        </div>
-      </div>
-      <div class="textarea">
-          <label><b>Your Message</b></label>
-          <!-- <input  placeholder="Enter your name..."> -->
-          <textarea name="comment" form="usrform" placeholder="Type your message..."></textarea>
-      </div>
-    </div>
-    <button class="arrow-button">Submit Form<span class="arrow"></span>
-    </button>
-    
+        <button class="arrow-button" type="submit">Submit Form<span class="arrow"></span>
+        </button>
+    </form>
   </div>
 </div>
