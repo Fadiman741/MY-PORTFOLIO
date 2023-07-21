@@ -2,12 +2,12 @@ hr {
         overflow: visible; /* For IE */
         padding: 0;
         border: none;
-        border-top: medium double #212121;;
-        color: #212121;
+        border-top: medium double #fff;;
+        color: #fff;
         text-align: center;
 }
 hr:after {
-        content: "xxxxxxx";
+        /* content: "xxxxxxx"; */
         display: inline-block;
         position: relative;
         top: -0.8em;
@@ -16,7 +16,14 @@ hr:after {
         background: #212121;
 }
 .footer{
-        margin-bottom: 30px;
+        padding: 20px;
+
+                background-image: linear-gradient(200deg, #000000, rgba(2, 2, 2, 0.75)), url('src/assets/images/bg2.jpg');
+                /* height: 100vh; */
+                background-repeat: no-repeat;
+                /* background-attachment: fixed; */
+                background-position: right ;
+                background-size: cover;
 }
 .footer-items{
         display: flex;
@@ -25,14 +32,19 @@ hr:after {
 p{
         font-family: "Work Sans",sans-serif;
         font-size: 15px;    
+        color: #aaa;
 }
 a{
         text-decoration: none;
         
         font-family: "Work Sans",sans-serif;
         font-size: 15px;  
-        padding-bottom: 15px;
-        color: black;
+        padding-bottom: 10px;
+        color: #aaa;
+}
+h2{
+        color:#fff;
+        padding-top: 10px;
 }
 
 @media screen and (max-width: 678px) {

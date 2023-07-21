@@ -10,9 +10,10 @@ import { BackgroundComponent } from './background/background.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BottomitemsComponent } from './bottomitems/bottomitems.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
       HomePageComponent,
       FooterComponent,
@@ -20,7 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
       BackgroundComponent,
       SkillsComponent,
       ProjectsComponent,
-      NavbarComponent
+      NavbarComponent,
+      BottomitemsComponent
    ],
   imports: [
     BrowserModule,

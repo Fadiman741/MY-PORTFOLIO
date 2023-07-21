@@ -7,8 +7,12 @@
         height: 5vh;
 }
 .nav-links a {
-        color: #201f1f;
+        color: #ddd;
         text-decoration: none;
+}
+.nav-links a:hover {
+                border-bottom: 4px solid #3a9bac;
+
 }
 /* LOGO */
 .logo {
@@ -24,8 +28,8 @@
 }
 .menu li:hover {
         /* background-color: #f0438e; */
-        border: 1px solid #0F4148;
-        border-radius: 7px;
+        /* border-bottom: 1px solid #0F4148; */
+        /* border-radius: 7px; */
         /* transition: 0.3s ease; */
 }
 .menu li {
