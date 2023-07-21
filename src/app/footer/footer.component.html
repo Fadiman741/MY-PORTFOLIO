@@ -1,35 +1,58 @@
 <div class="footer"  id="footer">
   <div style="margin: auto;max-width: 1000px;">
-    <h1 style="text-align: center;padding-top:50px;color:#eee;">LOGO</h1>
+    <h1 style="text-align: center;padding-top:10px;padding-bottom:30px;color:#eee;">Your Vision, Our Code!</h1>
     <hr>
-    <div class="footer-items">
+    <div class="footer-items" style="padding-top: 20px;padding-bottom: 20px;">
+      <div style="padding-bottom: 10px;">
+        <h3>CONTACT US</h3>
+        <p>Email : info@mafadi.com</p>
+        <!-- <p>Phone: +1 (123) 456-7890</p> -->
+        <p>Location : Cape Town, South Africa  </p>
+        <h3>SOCIALS</h3>
+      <div style="display: flex;justify-content: space-between;max-width: 140px;">
+        <a href="https://github.com/Fadiman741"><fa-icon [icon]="faSquareGithub"></fa-icon></a>
+        <a href="https://www.linkedin.com/in/mafadilephaka/"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+        <a href="https://wa.me/27796872741"><fa-icon [icon]="faSquareWhatsapp"></fa-icon></a>
+        <!-- <a><fa-icon [icon]="faSquareWhatsapp"></fa-icon></a> -->
+
+      </div>
+      </div>
+      <div >
+        <!-- <h3>SOCIALS</h3>
+        <div style="display: flex;justify-content: space-between;">
+          <a href="https://github.com/Fadiman741">A</a>
+          <a href="https://wa.me/27796872741">B</a>
+          <a href="">C</a>
+          <a href="https://www.linkedin.com/in/mafadilephaka/">D</a>
+        </div> -->
+       
+      </div>
         <div>
-          <h2>Navigation</h2>
-          <p>Home</p>
-          <p>About</p>
-          <p>Skills</p>
-          <p>Projects</p>
-        </div>
-        <div style="display: flex;flex-direction: column;">
-          <h2>Socials</h2>
-          <a href="https://github.com/Fadiman741">Gibhub</a>
-          <a href="https://wa.me/27796872741">Whatsapp</a>
-          <a href="">YouTube</a>
-          <a href="https://www.linkedin.com/in/mafadilephaka/">Linkedin</a>
+          <h3>NAVIGATION</h3>
+          <p (click)="goHome()"><a style="color: #aaa;">Home</a></p>
+          <p (click)="goDown1()"><a style="color: #aaa;">About</a></p>
+          <p (click)="goDown2()"><a style="color: #aaa;">Skills</a></p>
+          <p (click)="goDown3()"><a style="color: #aaa;">Projects</a></p>
         </div>
         <div>
-          <h2>Projects</h2>
+          <h3>PROJECTS</h3>
           <p>Myschool</p>
           <p>Skybridge</p>
           <p>YouTube</p>
           <p>Linkedin</p>
         </div>
+       
         <div>
-          <h2>Education</h2>
+          <h3>EDUCATION</h3>
           <p>Bsc Computer Science</p>
           <p>University of the Western Cape</p>
         </div>
+       
+        
+      
     </div>
+    <hr>
+    <p style="color:#bbb;padding-top: 10px;padding-bottom: 0px;text-align: center;">  Copyright &copy;2023 Fadiman All rights reserved</p>
+
   </div>
 </div>
-<p style="color:rgb(26, 24, 24);padding-bottom: 30px;text-align: center;">  Copyright &copy;2023 Fadiman All rights reserved</p>

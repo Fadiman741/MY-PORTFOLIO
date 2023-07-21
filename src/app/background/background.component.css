@@ -11,13 +11,34 @@ p{
 }
 
 h1{
-        font-size: 45px;
-        padding-left: 20px;
+        /* font-size: 45px;
+        padding-left: 20px; */
+}
+h1{
+    color: #3a9bac;    
+}
+.container{
+        display: flex;
+        padding: 50px;
+}
+.about{
+        width: 50%;
+        padding: 20px;
 }
 @media screen and (max-width: 678px) {
         .column-count{
                 column-count: 1;
                 column-rule: 1px solid #fff;
+        }
+        .container{
+                flex-direction: column;
+                padding: 20px;
+
+        }
+        .about{
+                width: 100%;
+                padding: 0px;
+
         }
         
 }

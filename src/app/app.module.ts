@@ -11,6 +11,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BottomitemsComponent } from './bottomitems/bottomitems.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [									
@@ -27,6 +29,8 @@ import { BottomitemsComponent } from './bottomitems/bottomitems.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
+    // FontAwesomeModule,
     // NgbModule
   ],
   providers: [],

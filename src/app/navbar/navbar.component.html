@@ -13,9 +13,9 @@
         <!-- NAVIGATION MENUS -->
         <div class="menu">
             <li><a routerLink="./">Home</a></li>
-            <li><a routerLink="./aboutus">About </a></li>
-            <li class="services">
-                <a href="/">Skills</a>
+            <li (click)="goDown1()"><a >About </a></li>
+            <li class="services" (click)="goDown2()">
+                <a >Skills</a>
                 <!-- DROPDOWN MENU -->
                 <!-- <ul class="dropdown">
                     <li><a href="/">Management </a></li>
@@ -23,8 +23,8 @@
                     <li><a href="/">Rental</a></li>
                 </ul> -->
             </li>
-            <li><a routerLink="./contactus">Projects </a></li>
-            <li><a routerLink="./contactus" href="footer">Contact </a></li>
+            <li (click)="goDown3()"><a>Projects </a></li>
+            <!-- <li><a routerLink="./contactus" href="footer">Contact </a></li> -->
         </div>
     </ul>
 </nav>

@@ -1,6 +1,6 @@
-<div class="skills-container" >
-  <div class="skills" style="max-width: 1250px;margin: auto;padding: 20px;padding-top: 30px;;">
-    <div>
+<div class="skills-container" id="skills" >
+  <div class="skills" style="max-width: 1300px;margin: auto;padding-top: 30px;;">
+    <!-- <div>
       <h1>Skills</h1>
       <p style=" text-align: justify;">
         I specialize in creating custom responsive web applications, which is my passion. My expertise includes both front-end development using Angular and back-end development using Django framework along with relational databases.</p>
@@ -19,18 +19,95 @@
           <li>Frontend framework (Angular, React)</li>
           <li>Backend framework(Express JS, Flask & Django)</li>
       </ul>
-    </div>
-    <div>
       <ul>
-      <h1>Compitencies</h1>
-          <li>Innovative and have solid grasp of the web-development lifecycle.</li>
-          <li>Prototyping with the following Adobe suit(illustrator,Photoshop, XD)</li>
-          <li>UML Documentation, Use Case Diagrams, ERD Diagrams, Class Diagrams, Database Design</li>
-          <li>Problem solving, independent self-starter whose also able to work effectively in a team environment.</li>
-          <li>Business Analysis, Database management, Project management.</li>
-          <li>I have a comfortable knowledge and understanding of (Computer Networking , Machine learning , Software Engineering , Business Analysis).</li>
+        <h1>Compitencies</h1>
+            <li>Innovative and have solid grasp of the web-development lifecycle.</li>
+            <li>Prototyping with the following Adobe suit(illustrator,Photoshop, XD)</li>
+            <li>UML Documentation, Use Case Diagrams, ERD Diagrams, Class Diagrams, Database Design</li>
+            <li>Problem solving, independent self-starter whose also able to work effectively in a team environment.</li>
+            <li>Business Analysis, Database management, Project management.</li>
+            <li>I have a comfortable knowledge and understanding of (Computer Networking , Machine learning , Software Engineering , Business Analysis).</li>
+        </ul>
+    </div> -->
+    <ng-template [ngTemplateOutlet]="skills"></ng-template>
 
-      </ul>
+    <div>
+     
     </div>
   </div>
 </div>
+<ng-template #skills>
+  <div class="skills-container" style="padding: 20px;" id="two">
+    <!-- <h1 style="font-family: Arial;">Skills and Knowledge Highlight </h1> -->
+
+    <div class="skills rotate_left">
+
+      <h2 style="font-weight: 800;">TOOLS AND TECHNOLOGIES</h2>
+      <br>
+
+      <p style=" text-align: justify;color: #bbb;">
+        I specialize in creating custom responsive web applications, which is my passion. My expertise includes both front-end development using Angular and back-end development using Django framework along with relational databases.</p>
+        
+      <!-- <ul class="listskills">
+          <li><i class="fa-folder fa" style="font-size: 17px;"></i>Jupyter Notebook</li>
+          <li><i class="fa fa-laptop" style="font-size:17px"></i>Virtual Machines</li>
+          <li><i class="fa fa-windows" style="font-size:17px"></i>Windows</li>
+          <li><i class="fa fa-linux" style="font-size:17px"></i>Linux</li>
+      </ul> -->
+      <br>
+        <h2 style="font-weight: 800;">PROGRAMMING LANGUAGES/ FRAMEWORK</h2>
+      <br>
+
+        <div class="skillbar">
+            <div class="bar front advanced-two" data-skill="HTML/CSS"></div>
+            <div class="bar front advanced-one" data-skill="Angular"></div>
+            <div class="bar front advanced" data-skill="JavaScript"></div>
+            <div class="bar front advanced" data-skill="TypeScript"></div>
+            <div class="bar front intermediate" data-skill="Python (Flask / Django)"></div>
+
+
+
+            <div class="bar front intermediate" data-skill="React"></div>
+            
+            <div class="bar front advanced" data-skill="SQL"></div>
+            <div class="bar front advanced" data-skill="Java"></div>
+            <div class="bar front advanced" data-skill="Java"></div>
+            <div class="bar back intermediate" data-skill="c#"></div>
+            <div class="bar back intermediate" data-skill="BootStrap"></div>
+        </div>
+      
+    </div>
+    <div class="skills rotate_right">
+      <h2 style="font-weight: 800;">KEY SKILLS</h2>
+
+      <ul class="listskills">
+      <br>
+
+          <li>Innovative and have solid grasp of the web-development lifecycle.</li>
+          <li>Frontend (Angular, React)</li>
+          <li>Backend (Express JS, Flask & Django, .NET)</li>
+          <li>RESTful APIs and CRUD methods</li>
+          <li>Problem solving, independent self-starter whose also able to work effectively in a team environment.</li>
+          <li>Prototyping skills with the following Adobe suit (illustrator, Photoshop, XD).</li>
+          <li>GitHub and Git</li>
+          <li>Database Design</li>
+          <br>
+        </ul>
+
+          <h2 style="font-weight: 800;">OTHER SKILLS</h2>
+      <br>
+    <ul>
+
+          <li>Communication (verbal and writing) skills.</li>
+          <li>Computer knowledge and proficient in Microsoft Office ,Word, PowerPoint,Excel, Outlook etc.</li>
+          <li>I have a comfortable knowledge and understanding of (Computer Networking , Machine learning , Software Engineering , Business Analysis). </li>
+          <li>Problem solving</li>
+          <li>Instalation of new softwares and troubleshooting</li>
+          <li>Prototyping with the following Adobe suit(illustrator,Photoshop, XD).</li>
+          <li>WordPress & Webflow</li>
+          <li>Integrating authentication & authorization with Flask</li>
+          <li>AWS(EC2)</li>
+      </ul>
+  </div>
+  </div>
+</ng-template>

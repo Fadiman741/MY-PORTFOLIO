@@ -1,6 +1,8 @@
-<div style="max-width: 1200px;margin: auto;margin-bottom: 5%;">
-  <h1 style="text-align: center;">Background</h1>
-  <div class="column-count">
+<div style="max-width: 1200px;margin: auto;" id="about">
+  <!-- <h1 style="text-align: center;">Background</h1> -->
+  <ng-template [ngTemplateOutlet]="background"></ng-template>
+
+  <!-- <div class="column-count">
     <p>I am an ambitious and dedicated aspiring Software Engineer with a deep-rooted desire to leverage technology as a catalyst
       for positive change. Throughout my academic journey, I have consistently demonstrated a natural talent for rapid learning,
       allowing me to quickly grasp new concepts and adapt to emerging technologies and challenges effortlessly. This innate
@@ -23,20 +25,49 @@
       (illustrator, Photoshop, XD) enables me to deliver high-quality prototypes and designs. Additionally, I am skilled in UML
       documentation, including Use Case Diagrams, ERD Diagrams, Class Diagrams, and Database Design, while also offering
       business analysis expertise.</p>
-      <!-- <p>    Volunteering with the Promaths Alumni Society has allowed me to make a meaningful impact on the lives of students. As
+      <p>    Volunteering with the Promaths Alumni Society has allowed me to make a meaningful impact on the lives of students. As
       Treasurer from March 2019 to March 2020, I managed comprehensive financial operations, ensuring compliance with
       financial regulations. Additionally, I organized and executed team-building and motivational events, providing valuable
-      guidance to high school learners in their career decision-making process.</p> -->
+      guidance to high school learners in their career decision-making process.</p>
   
-      <!-- <p>
+      <p>
       Throughout my career, I have engaged in various projects that exemplify my competence in web development and my ability
       to create functional and visually appealing applications. Notable examples include my contributions to Skybridge, a property
       website developed using Angular, Django, and MySQL, and my ongoing development of a dedicated academic hub for
       students, utilizing Django Rest Framework and MySQL. I have also collaborated on the development of a COVID-19 data web
       scraper using React, and built a weather app using Angular to present real-time weather data in a visually engaging and userfriendly interface.
-    </p> -->
-  </div>
+    </p>
+  </div> -->
   
 </div>
+<ng-template #background>
+  <div class="container">
+    <div class="about">
+        <img src="assets/about/about.jpeg" style="width:100%;">
+    </div>
+    <div class="about">
+        <h1 style="font-weight: 800;">ABOUT ME</h1>
+        <p>I am an ambitious and passionate Software Engineer, driven by a vision of technology-powered 
+          positive change. With a Bachelor of Sciences in Computer Science from the University of the 
+          Western Cape, I specialized in Computer Science and Information Systems, honing my skills 
+          in software engineering principles and web development.</p>
+          <br>
+          <p>Currently, I am a Software Developer (Intern) at TravelFindme (Pty) Ltd, actively involved 
+            in creating and modernizing websites using Angular. In addition to my role, I also work as a 
+            freelance web developer, gaining valuable experiences across various projects.</p>
+          <br>
 
+            <p>Proficient in both frontend and backend development, I have a strong command over REST 
+              APIs, CRUD methods, and problem-solving. My expertise extends to crafting Use Case 
+              Diagrams, ERD Diagrams, Class Diagrams, and Database Design, complemented by valuable 
+              insights into business analysis.</p>
+          <br>
+
+            <p>I am enthusiastic about leveraging technology to drive positive change and create impactful 
+              solutions. My diverse experiences and in-depth understanding of software engineering allow 
+              me to contribute effectively to projects that make a difference.</p>
+    </div>
+
+  </div>
+</ng-template>
 

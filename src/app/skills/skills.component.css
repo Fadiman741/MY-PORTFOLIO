@@ -23,3 +23,119 @@ li{
         background-position: right ;
         background-size: cover;
 }
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+.skills-container{
+        display: flex;
+}
+.skills{
+        width: 100%;
+        padding: 15px;
+}
+h2{
+        color: #3a9bac;
+}
+li{
+        color: #bbb;
+}
+li{
+        font-size: 15px;
+}
+        .skillbar {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "P24-SourceSans", Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        }
+        
+        
+        @keyframes load {
+                from {
+                width: 0%
+                }
+        }
+        
+        @-webkit-keyframes load {
+                from {
+                width: 0%
+                }
+        }
+        
+        @-moz-keyframes load {
+                from {
+                width: 0%
+                }
+        }
+        
+        @-o-keyframes load {
+                from {
+                width: 0%
+                }
+        }
+        
+        .bar {
+                background-color: #eee;
+                padding: 2px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #fff;
+        }
+        
+        .bar::before {
+                content: attr(data-skill);
+                background-color: black;
+                display: inline-block;
+                padding: 2px 0 2px 10px;
+                border-radius: inherit;
+                animation: load 2s 0s;
+                -webkit-animation: load 2s 0s;
+                -moz-animation: load 2s 0s;
+                -o-animation: load 2s 0s;
+        }
+        
+        .bar.front::before {
+                background-color:#3a9bac;
+        }
+        
+        .bar.back::before {
+                background-color: #3a9bac;
+        }
+        
+        .bar.learning::before {
+                width: calc(20% - 10px);
+        }
+        
+        .bar.basic::before {
+                width: calc(40% - 10px);
+        }
+        
+        .bar.intermediate::before {
+                width: calc(60% - 10px);
+        }
+        
+        .bar.advanced::before {
+                width: calc(80% - 10px);
+        }
+        .bar.advanced-one::before {
+                width: calc(85% - 10px);
+        }
+        .bar.advanced-two::before {
+                width: calc(95% - 10px);
+        }
+        
+        .bar.expert::before {
+                width: calc(100% - 10px);
+        }
+
+
+@media screen and (max-width: 678px) {
+        .skills-container{
+                flex-direction: column;
+        }
+        .skills{
+                padding: 0px;
+        }
+}

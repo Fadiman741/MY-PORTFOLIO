@@ -2,7 +2,7 @@ hr {
         overflow: visible; /* For IE */
         padding: 0;
         border: none;
-        border-top: medium double #fff;;
+        border-top: medium double #bbb;;
         color: #fff;
         text-align: center;
 }
@@ -33,6 +33,7 @@ p{
         font-family: "Work Sans",sans-serif;
         font-size: 15px;    
         color: #aaa;
+        padding-bottom: 10px;
 }
 a{
         text-decoration: none;
@@ -42,9 +43,26 @@ a{
         padding-bottom: 10px;
         color: #aaa;
 }
-h2{
-        color:#fff;
-        padding-top: 10px;
+a{
+        /* border: 1px solid #aaa;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px; */
+
+        color: black;
+        border-radius: 6px;
+        /* background-color: #fff; */
+        /* margin-left: 5px; */
+}
+fa-icon{
+        font-size: 25px;   
+        color: #3a9bac;    
+}
+h3{
+        color:#3a9bac;
+        /* padding-top: 10px; */
+        /* background-color: #3a9bac; */
 }
 
 @media screen and (max-width: 678px) {
