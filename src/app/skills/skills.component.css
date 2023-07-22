@@ -109,13 +109,18 @@ li{
         }
         
         .bar.basic::before {
-                width: calc(40% - 10px);
+                width: calc(60% - 10px);
+        }
+        .bar.basic-one::before {
+                width: calc(50% - 10px);
         }
         
         .bar.intermediate::before {
-                width: calc(60% - 10px);
+                width: calc(70% - 10px);
         }
-        
+        .bar.intermediate-one::before {
+                width: calc(65% - 10px);
+        }
         .bar.advanced::before {
                 width: calc(80% - 10px);
         }

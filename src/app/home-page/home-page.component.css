@@ -1,7 +1,7 @@
 .homepage{
         /* background-image: linear-gradient(135deg,#0F4148 0%,#2993A5 100%); */
         background-image: linear-gradient(450deg, #000000, rgba(2, 2, 2, 0.75)), url('src/assets/images/bg2.jpg');
-        height: 100vh;
+        min-height: 85vh;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
         background-position: right ;
