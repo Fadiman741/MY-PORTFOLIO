@@ -2,6 +2,7 @@ p{
         font-family: "Work Sans",sans-serif;
         font-size: 15px;
         text-align: justify;
+        color: rgb(28, 28, 28);
 }
 .column-count{
         column-count: 2;
