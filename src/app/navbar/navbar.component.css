@@ -106,3 +106,11 @@ input[type=checkbox] {
         }
 
 }
+button{
+        background-color: #3a9bac;
+        color: #eee;
+        border-radius: 35px;
+        width: 120px;
+        border: none;
+        height: 35px;
+}

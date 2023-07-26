@@ -13,9 +13,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BottomitemsComponent } from './bottomitems/bottomitems.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
-  declarations: [									
+  declarations: [										
     AppComponent,
       HomePageComponent,
       FooterComponent,
@@ -24,7 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
       SkillsComponent,
       ProjectsComponent,
       NavbarComponent,
-      BottomitemsComponent
+      BottomitemsComponent,
+      ServicesComponent
    ],
   imports: [
     BrowserModule,
