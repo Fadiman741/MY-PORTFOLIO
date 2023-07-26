@@ -2,6 +2,9 @@
         width: 310px;
         border: 1px solid #eee;
         margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
 
 }
 .project_pic{
@@ -24,6 +27,7 @@ p{
 .projects{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 }
 img{
         width: 100%;
