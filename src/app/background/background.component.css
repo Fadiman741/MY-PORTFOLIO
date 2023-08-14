@@ -3,6 +3,7 @@ p{
         font-size: 15px;
         text-align: justify;
         color: rgb(28, 28, 28);
+        
 }
 .column-count{
         column-count: 2;
@@ -27,6 +28,9 @@ h1{
         padding: 20px;
         opacity: 1.2;
 }
+.image:hover {
+        transform: scale(1.05);
+    }
 @media screen and (max-width: 678px) {
         .column-count{
                 column-count: 1;

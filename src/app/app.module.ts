@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,11 +15,12 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BottomitemsComponent } from './bottomitems/bottomitems.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { HomepageTwoComponent } from './homepage-two/homepage-two.component';
 
 @NgModule({
-  declarations: [										
+  declarations: [													
     AppComponent,
       HomePageComponent,
       FooterComponent,
@@ -26,14 +30,16 @@ import { ServicesComponent } from './services/services.component';
       ProjectsComponent,
       NavbarComponent,
       BottomitemsComponent,
-      ServicesComponent
+      ServicesComponent,
+      ReviewsComponent,
+      HomepageTwoComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    // FontAwesomeModule,
-    // NgbModule
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

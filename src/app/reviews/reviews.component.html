@@ -1,0 +1,41 @@
+<!-- <div class="reviews">
+  <div style="display: flex;justify-content: space-between;max-width: 1500px;margin: auto;padding:20px">
+    <div>
+      <h1 style="color:#fff;font-weight: 800;text-transform: uppercase">Some quick example</h1>
+      <h3 style="color:#aaa;text-transform: uppercase">See What People Have To Say...</h3>
+
+    </div>
+    <div>
+        <h1 style="color:#fff">4.8/5</h1>
+        <p style="color:#aaa;font-size: 15px;">Based on 21 reviews</p>
+    </div>
+  </div>
+  <br> -->
+  <div style="display: flex;">
+    <!-- <owl-carousel-o [options]="customOptions"> -->
+      <ng-container *ngFor="let package of reviews;let i = index">
+        <ng-template carouselSlide>
+          <div class="card">
+            <h1>hello</h1>
+            <!-- <span style="color: #3a9bac; font-size: 25px;"><b>{{ package.title }}</b></span>
+            <p>{{ package.body }}</p>
+            <hr>
+            <div style="display: flex; justify-content: space-between; padding-top: 10px;">
+              <div style="display: flex;">
+                <div style="width: 50px; background-color: #ddd; border-radius: 5px;"></div>
+                <div style="margin-left: 15px;">
+                  <p style="text-transform: uppercase;"><b>{{ package.author }}</b></p>
+                  <p style="color: #aaa;">{{ package.company }}</p>
+                </div>
+              </div>
+              <div>
+                <h2 style="color: #aaa;">{{ package.ratings }} / 5</h2>
+              </div>
+            </div> -->
+          </div>
+        </ng-template>
+      </ng-container>
+    <!-- </owl-carousel-o> -->
+  </div>
+<!-- </div> -->
+  
