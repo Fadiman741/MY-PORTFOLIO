@@ -74,6 +74,11 @@ input[type=checkbox] {
         user-select: none;
         color: #3a9bac;
 }
+fa-icon{
+        font-size: 35px;   
+        color: #ddd;  
+        margin: 10px;  
+}
     /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
         .menu {

@@ -16,7 +16,7 @@ body{
 
 .owl-theme .owl-nav{
         width: auto;
-        display: inline-flex;
+        /* display: inline-flex; */
 }
 
 .owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next{
@@ -32,13 +32,13 @@ body{
 }
 .owl-next{
         top:40%;
-        position: absolute;
+        /* position: absolute; */
         right:-60px;
         transform:translate(-50% , -50%);
 }
 .owl-prev{
         top:40%;
-        position: absolute;
+        /* position: absolute; */
         left:0px;
         transform:translate(-50% , -50%);
         /* left:-60px; */

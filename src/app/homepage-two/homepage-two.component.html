@@ -13,43 +13,47 @@
              </nav> -->
           <app-navbar></app-navbar>
        </div>
-       <div class="body-container">
+       <div class="body-container" style="padding-right: 10px;">
           <h3 class="heading-one">HEY THERE, I'M</h3>
           <h1 class="heading-two">MAFADI LEPHAKA</h1>
-          <h3 class="heading-one" style="margin-top: -50px;color: #3a9bac;">ASPIRING SOFTWARE ENGINEER</h3>
+          <h3 class="heading-one" style="color: #3a9bac;">SOFTWARE ENGINEER</h3>
           <br>
         
-        <p class="body-info" style="line-height: 1.6;color: #aaa;font-family: Work Sans,sans-serif;">I am passionate about creating seamless and visually 
+        <p class="body-info" style="line-height: 1.6;color: #eee;font-family: Arail,sans-serif;text-align: center;">I am passionate about creating seamless and visually 
              appealing web applications that cater to the unique needs of my 
-             clients. Over 12+ months experience with Web Application Developement.
+             clients. Over 12+ months experience with Web Developement.
           </p>
           <br>
-          <div class="more-info">
+          <br>
+          <br>
+          <div class="more-info" style="margin: auto;">
              <div class="column" >
-                <button style="font-size:14px;background-color: #3a9bac;padding: 10px;border: none;border-radius: 5px;color: #fff;" (click)="goProjects()"><i class="fa fa-play-circle" style="color:orange"></i>VIEW PROJECTS</button>
+                <button style="font-size:14px;padding: 10px;border: none;border-radius: 5px;color: #fff;text-align: center;border:2px solid #3a9bac ;background-color: #04252702;" (click)="goProjects()"><i class="fa fa-play-circle" style="color:orange"></i>VIEW PROJECTS</button>
              </div>
-             <div class="column" >
-                <!-- <button style="font-size:14px;background-color: #3a9bac;padding: 10px;border: none;border-radius: 5px;color: #fff;">HIRE ME</button> -->
-             </div>
+             <!-- <div class="column" >
+                <button style="font-size:14px;background-color: #3a9bac;padding: 10px;border: none;border-radius: 5px;color: #fff;">HIRE ME</button>
+             </div> -->
           </div>
        </div>
+       
        <div class="botom-div">
-          <div class="row">
-             <div class="column" >
+         <app-porjects-samples></app-porjects-samples>
+
+          <!-- <div class="row"> -->
+             <!-- <div class="column" >
                 <div style="display: flex;justify-content: space-between;">
-                   <div class="sub-column"  >
-                      <!-- <h1 style="margin-left:25%">column</h1> -->
-                      <!-- <br> -->
-                      <div class="img profile_picture" style="width: 170px;height: 170px; border-radius: 10px;border: 5px solid #3a9bac;margin: auto;">
+                   <div class="sub-colum"  >
+                     
+                      <div class="img profile_picture" style="width: 180px;height: 180px; border-radius: 10px;border: 5px solid #3a9bac;margin: auto;">
                         <img src="https://mafadilephaka.co.za/assets/about/about.jpeg" alt="" style="width: 100%;height: 100%;">
                       </div>
                    </div>
-                   <div class="sub-column" style="padding: 2%;" >
-                      <!-- <h1>column</h1> -->
-                      <p style="width: 100%;font-size: 15px;color: #aaa;font-family: Work Sans,sans-serif;">Skilled at progressive enhancement, Web Development and Software Engineering
+                   <div class="sub-colum" style="padding-left: 15px;" >
+                      <p style="width: 100%;font-size: 15px;color: #aaa;font-family: Work Sans,sans-serif;max-width: 240px;">Skilled at progressive enhancement, Web Development and Software Engineering
                       </p>
+                      <br>
                       <h3 style="color:#3a9bac">SOCIALS</h3>
-                      <div style="display: flex;max-width: 90px;justify-content: space-between;">
+                      <div style="display: flex;max-width: 130px;justify-content: space-between;">
                          <a href="https://github.com/Fadiman741">
                             <fa-icon [icon]="faSquareGithub"></fa-icon>
                          </a>
@@ -59,24 +63,16 @@
                          <a href="https://wa.me/27796872741">
                             <fa-icon [icon]="faSquareWhatsapp"></fa-icon>
                          </a>
-                         <!-- <a><fa-icon [icon]="faSquareWhatsapp"></fa-icon></a> -->
                       </div>
                    </div>
                 </div>
-             </div>
-             <!-- <div class="column" style="max-width: 800px;height: 20vh;position: relative;" >
-               <owl-carousel-o [options]="customOptions">
-                  <ng-container *ngFor="let slide of dynamicSlides">
-                     <ng-template carouselslide id="{{slide.id}}">
-                          <img src="{{slide.src}}"  style="width:100%;height: 100%;">
-                     </ng-template>
-                  </ng-container>
-               </owl-carousel-o>
-            </div> -->
-          </div>
+             </div> -->
+          <!-- </div> -->
        </div>
     </div>
+     
  </div>
+
  <app-background></app-background>
  <app-skills></app-skills>
  <!-- <app-services></app-services> -->

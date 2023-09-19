@@ -18,9 +18,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services/services.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { HomepageTwoComponent } from './homepage-two/homepage-two.component';
+import { AboutComponent } from './about/about.component';
+import { PorjectsSamplesComponent } from './porjects-samples/porjects-samples.component';
 
 @NgModule({
-  declarations: [													
+  declarations: [															
     AppComponent,
       HomePageComponent,
       FooterComponent,
@@ -32,7 +34,9 @@ import { HomepageTwoComponent } from './homepage-two/homepage-two.component';
       BottomitemsComponent,
       ServicesComponent,
       ReviewsComponent,
-      HomepageTwoComponent
+      HomepageTwoComponent,
+      AboutComponent,
+      PorjectsSamplesComponent
    ],
   imports: [
     BrowserModule,

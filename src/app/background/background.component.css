@@ -16,20 +16,36 @@ h1{
         /* font-size: 45px;
         padding-left: 20px; */
 }
+
+
+
 h1{
-    color: #3a9bac;    
+    color: #3a9bac;  
+    text-align: center;  
 }
 .container{
         display: flex;
         padding: 50px;
+        margin-top: 20px;
+        justify-content: space-around;
 }
 .about{
-        width: 50%;
-        padding: 20px;
+        /* width: 50%; */
+        /* padding: 1%; */
         opacity: 1.2;
+        margin: 1%;
+        /* background-color: #7bc6d4; */
 }
-.image:hover {
-        transform: scale(1.05);
+.image{
+
+        background-color: #7bc6d4;
+}
+.about p{
+
+        padding: 10px;
+}
+.about:hover {
+        /* transform: scale(1.05); */
     }
 @media screen and (max-width: 678px) {
         .column-count{
@@ -38,13 +54,20 @@ h1{
         }
         .container{
                 flex-direction: column;
-                padding: 20px;
-
+                padding: 2%;
         }
         .about{
                 width: 100%;
-                padding: 0px;
+                /* padding: 10px; */
+        margin: auto;
 
         }
-        
+        .about p{
+
+                padding: 10px;
+        }
+        .image{
+
+                margin: auto;
+        }
 }

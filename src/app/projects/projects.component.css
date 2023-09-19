@@ -15,6 +15,7 @@ h1{
 }
 .card:hover {
         transform: scale(1.05);
+        /* transform:translateY(1.05) */
     }
 .project_pic{
         height: 180px;
@@ -101,7 +102,6 @@ img{
         -webkit-box-orient: vertical;
         overflow: hidden;
 }
-
 @media screen and (max-width: 678px) {
         .projects{
                 flex-direction: column;
@@ -110,3 +110,49 @@ img{
                 margin-top: 2%;
         }
 }
+
+
+
+/* -----------------RIBBON-------------------------------------------- */
+ /* .ribbon{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        overflow: hidden;
+}
+       .ribbon::before,
+      .ribbon::after{
+        position: absolute;
+        content: "";
+        z-index: -1;
+        display: block;
+        border: 7px solid #ba24f0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+      }
+      
+       .ribbon::before{
+        top: 0px;
+        right: 15px;
+      }
+      
+       .ribbon::after{
+        bottom: 15px;
+        left: 0px;
+      }
+      
+       .ribbon span{
+        position: absolute;
+        top:30px;
+        right: 0;
+        transform: rotate(-45deg);
+        width: 200px;
+        background: #ba24f0;
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+      } */

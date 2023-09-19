@@ -1,8 +1,8 @@
-<div style="height:70px; background-color:#0005 ; ">
-  <nav class="navbar" style="padding-left: 20px;padding-right: 20px;max-width: 1600px;margin: auto;">
+<div style="height:70px; background-color:#000000a8 ; ">
+  <nav class="navbar" style="padding-left: 20px;padding-right: 20px;max-width: 1700px;margin: auto;">
     <!-- LOGO -->
     <div class="logo" style="height: 70px;">
-        <!-- <h1 style="font-weight: 800;font-family: Work Sans  ,sans-serif;color: #0F4148;;">LOGO</h1> -->
+        <h1 style="font-weight: 500;font-family: Work Sans  ,sans-serif;color: #53525221;font-size: 25px;padding: 10PX;">#DEVELOPER</h1>
         <!-- <img src="assets/favicon/13.png" style="height: 100%;"> -->
     </div>
     <!-- NAVIGATION MENU -->
@@ -12,18 +12,30 @@
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <!-- NAVIGATION MENUS -->
         <div class="menu">
-            <li><a routerLink="./">Home</a></li>
+            <div style="display: flex;max-width: 130px;justify-content: space-between;">
+                <a href="https://github.com/Fadiman741">
+                   <fa-icon [icon]="faSquareGithub"></fa-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/mafadilephaka/">
+                   <fa-icon [icon]="faLinkedin"></fa-icon>
+                </a>
+                <a href="https://wa.me/27796872741">
+                   <fa-icon [icon]="faSquareWhatsapp"></fa-icon>
+                </a>
+                <!-- <a><fa-icon [icon]="faSquareWhatsapp"></fa-icon></a> -->
+             </div>
+            <!-- <li><a routerLink="./">Home</a></li>
             <li (click)="goDown1()"><a >About </a></li>
             <li class="services" (click)="goDown2()">
-                <a >Skills</a>
+                <a >Skills</a> -->
                 <!-- DROPDOWN MENU -->
                 <!-- <ul class="dropdown">
                     <li><a href="/">Management </a></li>
                     <li><a href="/">Sales</a></li>
                     <li><a href="/">Rental</a></li>
                 </ul> -->
-            </li>
-            <li (click)="goDown3()"><a>Projects </a></li>
+            <!-- </li>
+            <li (click)="goDown3()"><a>Projects </a></li> -->
             <!-- <button>Hire Me</button> -->
             <!-- <li><a routerLink="./contactus" href="footer">Contact </a></li> -->
         </div>

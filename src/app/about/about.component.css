@@ -1,0 +1,40 @@
+.container-one {
+        /* position: absolute; */
+        /* transform: translate(-50%, -50%); */
+        /* left: 50%; */
+        /* top: 50%; */
+        height: 4.0em;
+        /* width: 28.12em; */
+        margin:auto ;
+        text-align: center;
+        cursor: pointer;
+      }
+      h1 {
+        /* background-color: #0a0a0a; */
+        color: #3a9bac;
+        text-align: center;
+        font-size: 3.37em;
+        position: absolute;
+        font-family: "Work Sans",sans-serif;
+        font-weight: 700;
+      }
+.container-one p {
+        color: #ff3c78;
+        /* width: 100%; */
+        /* font-size: 1.8em; */
+        /* font-weight: 500; */
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        text-align: center;
+      }
+      .container-one:hover h1:nth-child(2) {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        transform: translateY(-30px);
+        transition: 0.3s;
+      }
+      .container-one:hover h1:nth-child(3) {
+        clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+        transform: translateY(30px);
+        transition: 0.3s;
+      }
