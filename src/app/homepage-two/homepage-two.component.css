@@ -12,7 +12,7 @@
         margin: 0;
   /*      background-image: url('bg.png');*/
   /* background-color: #0005; */
-  background-image: linear-gradient(100deg, rgba(2, 2, 2, 0.85), rgba(2, 2, 2, 0.85)), url('src/assets/images/bg1.jpg');
+  background-image: linear-gradient(100deg, rgba(2, 2, 2, 0.75), rgba(2, 2, 2, 0.75)), url('src/assets/images/bg4.jpg');
         width:100%;
         /* height:100vh; */
         background-size: cover;
@@ -48,7 +48,7 @@ nav ul{
         color:white;
         max-width: 800px;
         margin: auto;
-        padding-top:5%;
+        padding-top:6%;
 
         /* padding-top: 50px; */
 }
@@ -100,13 +100,13 @@ nav ul{
 }
 
 .botom-div{
-        background-color:#0005;
+        /* background-color:#0005; */
         padding: 2%;
         min-height: 20vh;
         width: 91vw;
-        box-shadow: -40px -117px 400px -45px rgba(183, 175, 175, 0.27);
+        /* box-shadow: -40px -117px 400px -45px rgba(183, 175, 175, 0.27);
         -webkit-box-shadow: -40px -117px 400px -45px rgba(109,102,102,0.27);
-        -moz-box-shadow: -40px -117px 400px -45px rgba(109,102,102,0.27);
+        -moz-box-shadow: -40px -117px 400px -45px rgba(109,102,102,0.27); */
 }
 .profile_picture:hover {
         transform: scale(1.05);
@@ -137,6 +137,24 @@ fa-icon{
 button:hover{
         background-color: #3a9bac;
 }
+.navigation{
+        /* padding: 35px; */
+        padding-left: 6vw;
+        padding-right: 2vw;
+        padding-top: 3vh;
+}
+.hire-me {
+        background-color: #3a9bac;
+        border: 2px solid #3a9bac;
+        /* background-color: #0e0d0d; */
+        color: #eee;
+        border-radius: 5px;
+        width: 100px;
+        border: none;
+        height: 44px;
+        margin-left: 15px;
+        /* margin-top: 1px; */
+}
 @media screen and (max-width: 678px) {
         .body-container .heading-two{
                 font-size: 60px;
@@ -149,7 +167,7 @@ button:hover{
 
         } */
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 832px) {
 
         .botom-div{
                 display: none;

@@ -20,9 +20,11 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { HomepageTwoComponent } from './homepage-two/homepage-two.component';
 import { AboutComponent } from './about/about.component';
 import { PorjectsSamplesComponent } from './porjects-samples/porjects-samples.component';
+import { HireMeComponent } from './hire-me/hire-me.component';
+import { WriteReviewComponent } from './write-review/write-review.component';
 
 @NgModule({
-  declarations: [															
+  declarations: [																	
     AppComponent,
       HomePageComponent,
       FooterComponent,
@@ -36,7 +38,9 @@ import { PorjectsSamplesComponent } from './porjects-samples/porjects-samples.co
       ReviewsComponent,
       HomepageTwoComponent,
       AboutComponent,
-      PorjectsSamplesComponent
+      PorjectsSamplesComponent,
+      HireMeComponent,
+      WriteReviewComponent
    ],
   imports: [
     BrowserModule,

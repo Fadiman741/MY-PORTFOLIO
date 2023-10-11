@@ -75,7 +75,7 @@ input[type=checkbox] {
         color: #3a9bac;
 }
 fa-icon{
-        font-size: 35px;   
+        font-size: 30px;   
         color: #ddd;  
         margin: 10px;  
 }
@@ -109,13 +109,23 @@ fa-icon{
                 top: 30px;
                 transform: translateX(35%);
         }
+        button{
+                background-color: #d6dcdd;
+
+                color: #222222;
+
+                /* margin-top: 1px; */
+        }
 
 }
-button{
+/* button{
         background-color: #3a9bac;
+        border:2px solid #3a9bac ;
+
         color: #eee;
-        border-radius: 35px;
-        width: 120px;
+        border-radius: 5px;
+        width: 100px;
         border: none;
-        height: 35px;
-}
+        height: 40px;
+
+} */

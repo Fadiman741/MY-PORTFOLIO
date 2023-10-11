@@ -1,4 +1,4 @@
-<div style="background-color: url('assets/images/7.jpg');">
+<div style="background-image: linear-gradient(45deg, rgba(15, 15, 15, 0.733), rgba(0, 0, 0, 0.767)), url(' assets/images/profile.png');background-size: cover;background-repeat: no-repeat;">
   <div style="max-width: 1200px;margin: auto;" style="padding: 15px;" id="about">
     <!-- <h1 style="text-align: center;">Background</h1> -->
     <ng-template [ngTemplateOutlet]="background"></ng-template>
@@ -46,16 +46,18 @@
 <ng-template #background>
  
         <!-- <h1 style="font-weight: 800;">ABOUT ME</h1> -->
-        <app-about></app-about>
-
-  <div class="container" style="max-width: 1200px;margin: auto;">
         
-        <div class=" image" style="margin: auto;min-width: 340px;padding: 1.4%;">
+
+  <div class="container" style="max-width: 900px;margin: auto;">
+        
+        <div class=" image" style="margin: auto;min-height: 300px;padding: 1.4%;">
         <!-- <img src="assets/about/about.jpeg" style="width:90%;border:10px solid #fff"> -->
-        <img src="assets/about/21.png" style="width:100%;box-shadow: 0.6rem 0.6rem #fff, -0.6rem -0.6rem #fff;">
     </div>
     <br>
-    <div class="about" style="box-shadow: 0.8rem 0.8rem #fff, -0.8rem -0.8rem #fff;background-color: rgb(215, 235, 252);">
+    <div class="about" style="background-color: rgba(215, 235, 252, 0.226);">
+    <!-- <div class="about" style="box-shadow: 0.9rem 0.9rem #fff, -0.9rem -0.9rem #fff;background-color: rgba(215, 235, 252, 0.226);"> -->
+        <h1 style="color: #3a9bac;text-align: center;font-size: 2.37em;font-weight: 800;">ABOUT ME</h1>
+        <BR>
         <p>I am an ambitious and passionate Software Engineer, driven by a vision of technology-powered 
           positive change. With a Bachelor of Sciences in Computer Science from the University of the 
           Western Cape, I specialized in Computer Science and Information Systems, honing my skills 
@@ -72,6 +74,10 @@
           <!-- <br> -->
             <p>With my varied experiences and profound comprehension of software engineering, I am well-equipped to make meaningful contributions to projects that have a significant impact.</p>
     </div>
+    <br>
+    <!-- <div class=" image" style="margin: auto;min-width: 340px;padding: 1.4%;">
+      <img src="assets/about/21.png" style="width:100%;box-shadow: 0.6rem 0.6rem #fff, -0.6rem -0.6rem #fff;">
+  </div> -->
 
   </div>
 </ng-template>

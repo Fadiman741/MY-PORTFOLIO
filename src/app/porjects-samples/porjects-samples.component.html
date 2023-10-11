@@ -1,4 +1,20 @@
-<div  style="height: 25vh;background-color: #09d8e429;width: 100%;" >
+<div style="max-width:100%;padding:30px; ">
+  <owl-carousel-o [options]="customOptions">
+
+  <!-- <div>Some tags before</div> -->
+  <div style="display: flex;justify-content: space-between;">
+    <ng-container *ngFor="let item of Projects">
+      <ng-template carouselslide>
+        <img  src="{{item.src}}" style="height: 100%;max-width: 350px;margin: 3%;" >
+
+      </ng-template>
+    </ng-container>
+  </div>
+</owl-carousel-o>
+  
+  <!-- <div>Some tags after</div> -->
+</div>
+<!-- <div  style="height: 25vh;background-color: #09d8e429;width: 100%;" >
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let slide of dynamicSlides">
       <ng-template carouselslide>
@@ -6,10 +22,17 @@
       </ng-template>
     </ng-container>
   </owl-carousel-o>
-</div>
-<!-- <div style="">
-  <owl-carousel-o [options]="customOptions" >
+</div> -->
+<!-- <div style="height: 25vh;background-color: #09d8e429;width: 100%; ">
+  <owl-carousel-o [options]="customOptions"  >
     <ng-template carouselSlide>
+      
+        <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
+    </ng-template>
+    <ng-template carouselSlide>
+        <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
+    </ng-template> -->
+    <!-- <ng-template carouselSlide>
       <div class="slide">
         <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
       </div>
@@ -17,18 +40,8 @@
     <ng-template carouselSlide>
       <div class="slide">
         <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img src="assets/images/1.jpeg" alt="img 1" style="width: 300px;height: 100%;" />
-      </div>
+      </div> 
   
-    </ng-template>
-  </owl-carousel-o>
+    </ng-template>-->
+  <!-- </owl-carousel-o>
 </div> -->

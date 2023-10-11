@@ -9,7 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class PorjectsSamplesComponent implements OnInit {
 
-  dynamicSlides = [
+  Projects = [
     {
       id: 1,
       src: 'assets/projects/5.jpg',
@@ -48,23 +48,23 @@ export class PorjectsSamplesComponent implements OnInit {
   }
   customOptions: OwlOptions = {
     loop: false,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
-    navSpeed: 600,
-    navText: ['&#8249', '&#8250;'],
+    navSpeed: 700,
+    navText: ['<span>&#8249</span>', '<span>&#8250</span>'],
     responsive: {
       0: {
-        items: 1 
+        items: 1
       },
       400: {
         items: 2
       },
-      760: {
+      740: {
         items: 3
       },
-      1000: {
+      940: {
         items: 4
       }
     },

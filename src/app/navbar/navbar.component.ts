@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from "@angular/common";
-import { faSquareGithub,faLinkedin ,faSquareWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub,faLinkedin ,faSquareWhatsapp,faCodepen} from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   faSquareGithub=faSquareGithub;
   faLinkedin=faLinkedin;
   faSquareWhatsapp=faSquareWhatsapp;
+  faCodepen=faCodepen;
 
   constructor(private scroller: ViewportScroller) { }
 

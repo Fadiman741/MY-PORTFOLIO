@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faSquareGithub,faLinkedin ,faSquareWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub,faLinkedin ,faSquareWhatsapp,faRocketchat} from '@fortawesome/free-brands-svg-icons';
 import { ViewportScroller } from "@angular/common";
 
 @Component({
@@ -10,7 +10,8 @@ import { ViewportScroller } from "@angular/common";
 export class FooterComponent implements OnInit {
   faSquareGithub=faSquareGithub;
   faLinkedin=faLinkedin;
-  faSquareWhatsapp=faSquareWhatsapp;
+  faSquareWhatsapp = faSquareWhatsapp;
+  faRocketchat=faRocketchat
 
   constructor(private scroller: ViewportScroller) { }
 
