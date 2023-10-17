@@ -4,12 +4,14 @@ h1{
         padding-left: 20px;
 }
 .card{
-        max-width: 330px;
+        max-width: 300px;
         border: 1px solid #eee;
         margin: auto;
         margin-top: 2%;
         margin-bottom: 2%;
         background-color: #fff;
+        border-radius: 20px;
+        padding: 15px;
 
 
 }
@@ -27,7 +29,7 @@ h1{
 
 }
 .body{
-        padding: 15px;
+        /* padding: 15px; */
         
 }
 p{

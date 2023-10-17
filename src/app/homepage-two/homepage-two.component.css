@@ -1,7 +1,7 @@
 
 .tracker {
         float: left;
-        width: 4vw;
+        width: 2vw;
         height: 100vh;
         margin: 0;
 
@@ -61,6 +61,17 @@ nav ul{
 
 
 }
+.body-container .heading-two {
+        text-shadow: 0 1px 0 #bbb, 0 2px 0 #bbb,
+                0 3px 0 #bbb, 0 4px 0 #bbb,
+                0 5px 0 #bbb, 0 6px 0 #bbb,
+                /* 0 7px 0 #bbb, 0 8px 0 #bbb,
+                0 9px 0 #bbb, 0 10px 0 #bbb,
+                0 11px 0 #bbb, 0 12px 0 #bbb, */
+                0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+
 .body-container .heading-two{
         text-align: center;
         font-size: 70px;
@@ -76,9 +87,12 @@ nav ul{
         /* transition: all 0.4s ease; */
         /* color: black; */
         /* border: 1px solid #eee; */
-        
-
 }
+.body-container .heading-two:hover {
+        transform: rotateX(360deg);
+        transition: width 1.5s, height 1.5s, transform 1.5s;
+}
+
 @keyframes wave {
         0% {
           background-position: 0 0;
@@ -88,7 +102,7 @@ nav ul{
         }
       }
 .botom-div {
-        margin-left: 4vw;;
+        margin-left: 2vw;;
         position: absolute;
         bottom: 0px;
         color:white;
@@ -103,7 +117,7 @@ nav ul{
         /* background-color:#0005; */
         padding: 2%;
         min-height: 20vh;
-        width: 91vw;
+        width: 93vw;
         /* box-shadow: -40px -117px 400px -45px rgba(183, 175, 175, 0.27);
         -webkit-box-shadow: -40px -117px 400px -45px rgba(109,102,102,0.27);
         -moz-box-shadow: -40px -117px 400px -45px rgba(109,102,102,0.27); */
@@ -134,12 +148,13 @@ fa-icon{
         font-size: 35px;   
         color: #ddd;    
 }
+
 button:hover{
         background-color: #3a9bac;
 }
 .navigation{
         /* padding: 35px; */
-        padding-left: 6vw;
+        padding-left: 4vw;
         padding-right: 2vw;
         padding-top: 3vh;
 }
@@ -152,8 +167,34 @@ button:hover{
         width: 100px;
         border: none;
         height: 44px;
+        cursor: pointer;
         margin-left: 15px;
         /* margin-top: 1px; */
+}
+.hire-me:hover {
+        background-color: #3a9bac00;
+        border: 2px solid #3a9bac;
+
+}
+
+.viewprojects{
+        font-size:14px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        border:2px solid #3a9bac ;
+        background-color: #04252702;
+        cursor: pointer;
+}
+.viewprojects:hover{
+        background-color: #3a9bacdc;
+
+}
+.skillsimages:hover{
+        transform: rotateY(360deg);
+        transition: width 1.5s, height 1.5s, transform 1.5s;
 }
 @media screen and (max-width: 678px) {
         .body-container .heading-two{
@@ -172,4 +213,7 @@ button:hover{
         .botom-div{
                 display: none;
         }
+        .body-info{
+                        padding: 40px;
+                }
 }

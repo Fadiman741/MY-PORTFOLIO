@@ -1,25 +1,30 @@
 
-<!-- <div style="min-height: 95vh; padding: 4%; background-image: linear-gradient(100deg, rgba(2, 2, 2, 0.85), rgba(2, 2, 2, 0.85)), url('src/assets/images/bg1.jpg');"> -->
-<div style="min-height: 95vh;background-image: linear-gradient(100deg, rgba(2, 2, 2, 0.65), rgba(2, 2, 2, 0.65)), url('assets/images/bg4.jpg'); width:100%;  background-size: cover;">
+<div
+	style="min-height: 95vh;background-image: linear-gradient(100deg, rgba(2, 2, 2, 0.65), rgba(2, 2, 2, 0.65)), url('assets/images/bg4.jpg'); width:100%;  background-size: cover;">
 	<div class="navigation" style="padding: 2%;">
 		<app-navbar></app-navbar>
 	</div>
-	<h2 style="text-align: center; color: #eee; font-family: Work Sans, sans-serif; font-weight: 700;">WE APPRECIATE
+	<h2
+		style="text-align: center; color: #eee; font-family: Work Sans, sans-serif; font-weight: 700;">WE
+		APPRECIATE
 		YOUR REVIEW!</h2>
 	<br />
-	<p style="text-align: center; color: #bbb; font-family: Work Sans, sans-serif;">Your review will help us to
+	<p style="text-align: center; color: #bbb; font-family: Work Sans, sans-serif;">Your
+		review will help us to
 		improve our web hosting quality products, and customer services.</p>
 	<br />
 	<br />
 
-	<form id="feedback" action="">
+	<form id="feedback" (ngSubmit)="onReviewSubmit(reviewForm)"
+		#reviewForm="ngForm">
 		<div class="pinfo">Your personal info</div>
 
 		<div class="form-group">
 			<div class="col-md-4 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-user"></i></span>
-					<input name="name" placeholder="John Doe" class="form-control" type="text" />
+					<input name="name" placeholder="John Doe" class="form-control" type="text"
+						ngModel required />
 				</div>
 			</div>
 		</div>
@@ -29,7 +34,7 @@
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 					<input name="email" type="email" class="form-control"
-						placeholder="john.doe@yahoo.com" />
+						placeholder="john.doe@yahoo.com" ngModel required />
 				</div>
 			</div>
 		</div>
@@ -39,7 +44,7 @@
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-globe"></i></span>
 					<input name="URL" placeholder="https://google.com" class="form-control"
-						type="url" />
+						type="url" ngModel required />
 				</div>
 			</div>
 		</div>
@@ -50,7 +55,7 @@
 			<div class="col-md-4 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-heart"></i></span>
-					<select class="form-control" id="rate">
+					<select class="form-control" id="rate" name="rating" ngModel required>
 						<option value="1star">1</option>
 						<option value="2stars">2</option>
 						<option value="3stars">3</option>
@@ -67,7 +72,8 @@
 			<div class="col-md-4 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-					<textarea class="form-control" id="review" rows="3"></textarea>
+					<textarea class="form-control" id="review" rows="3" name="message" ngModel
+						required></textarea>
 				</div>
 			</div>
 		</div>
